@@ -40,7 +40,7 @@
 </header>--><!-- /.navbar -->
 
 <header class="navbar-masthead banner navbar navbar-inverse navbar-static-top visible-md visible-lg" role="banner">
-  <div class="container">
+  <div class="container-fluid">
       <a href="<?php echo home_url(); ?>/">
          <img class="img-responsive" src="/assets/img/capitala-masthead.jpg">
       </a>
