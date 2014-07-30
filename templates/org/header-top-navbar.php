@@ -39,13 +39,20 @@
   </ul>
 </header>--><!-- /.navbar -->
 
-
-<header class="visible-md visible-lg" role="banner">
+<header class="navbar-masthead banner navbar navbar-inverse navbar-static-top visible-md visible-lg" role="banner">
   <div class="container">
-      <a href="<?php echo home_url(); ?>/">
-         <img class="img-responsive" src="/assets/img/capitala-masthead.jpg">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="<?php echo home_url(); ?>/">
+        <span class="text-hide"><?php bloginfo('name'); ?></span>
       </a>
-    
+    </div>
+    <div class="pull-right" style="width: 300px; padding-top:10px;">
+      <em class="text-primary serif">
+      <span style="font-size:1.25em;">&ldquo;</span>My best friend is a person who will give me a book I have not read.<span style="font-size:1.25em;">&rdquo;</em>
+      </em>
+      <br>
+      <small class="text-muted pull-right">&ndash; Abraham Lincoln</small>
+    </div>
   </div>
 </header><!-- /.navbar -->
 
