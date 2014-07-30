@@ -66,8 +66,11 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand hidden-md hidden-lg" href="<?php echo home_url(); ?>/">
+        <img class="img-responsive" src="/assets/img/capitala-masthead.jpg">
+        <!--
         <span class="logotype hidden-sm">SPL Foundation</span>
         <span class="logotype hidden-xs"><?php bloginfo('name'); ?></span>
+        -->
       </a>
     </div>
     <nav class="collapse navbar-collapse" role="navigation">
