@@ -39,10 +39,10 @@
   </ul>
 </header>--><!-- /.navbar -->
 
-<header class="navbar-masthead banner navbar navbar-inverse navbar-static-top visible-md visible-lg" style="margin-top:20px; border-radius: 4px;" role="banner">
+<header class="navbar-masthead banner navbar navbar-inverse navbar-static-top visible-md visible-lg" style="margin-top:20px;" role="banner">
   <div class="container">
     <div class="navbar-header">
-      <a class="navbar-brand" href="<?php echo home_url(); ?>/">
+      <a class="navbar-brand" href="<?php echo home_url(); ?>/" style="border-radius: 20px;">
         <span class="text-hide"><?php bloginfo('name'); ?></span>
       </a>
     </div>
