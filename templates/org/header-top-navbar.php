@@ -38,8 +38,8 @@
     </li>
   </ul>
 </header>--><!-- /.navbar -->
-<div class="row-fluid">
-<header class="navbar-masthead banner navbar navbar-inverse navbar-static-top visible-md visible-lg" role="banner">
+
+<header class=" visible-md visible-lg" role="banner">
   <div class="container">
       <a href="<?php echo home_url(); ?>/">
          <img class="img-responsive" src="/assets/img/capitala-masthead.jpg">
@@ -47,7 +47,6 @@
     
   </div>
 </header><!-- /.navbar -->
-</div>
 
 <header class="navbar-primary banner navbar navbar-inverse navbar-static-top" role="banner" style="margin-bottom:0;">
   <div class="container">
