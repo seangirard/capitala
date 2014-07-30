@@ -42,7 +42,7 @@
 <header class="navbar-masthead banner navbar navbar-inverse navbar-static-top visible-md visible-lg" style="margin-top:20px;" role="banner">
   <div class="container">
     <div class="navbar-header">
-      <a class="navbar-brand" href="<?php echo home_url(); ?>/" style="border-radius: 10px 0 0 10px;">
+      <a class="navbar-brand" href="<?php echo home_url(); ?>/" style="border-radius: 10px 10px 0 0;">
         <span class="text-hide"><?php bloginfo('name'); ?></span>
       </a>
     </div>
