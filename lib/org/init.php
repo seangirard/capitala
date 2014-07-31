@@ -57,8 +57,8 @@ function capitala_portfolio($params) {
   if ($posts->have_posts()) : 
     $html .= '<div class="row">'.PHP_EOL;
     while ($posts->have_posts()) : $posts->the_post(); 
-      $html .= '<div class="col-md-6">'.PHP_EOL;
-      $html .= '<div class="panel panel-default clearfix">'.PHP_EOL;
+      $html .= '<div class="col-md-12">'.PHP_EOL;
+      $html .= '<div class="panel panel-default">'.PHP_EOL;
       $html .= '<div class="panel-body">'.PHP_EOL;
       $html .= '<h4><a href="'.get_permalink().'">'.get_the_title().'</a> <small>&rarr;</small></h4>'.PHP_EOL;
       if ( has_post_thumbnail() ) { 
