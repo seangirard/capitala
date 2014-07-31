@@ -79,7 +79,7 @@ function capitala_portfolio($params) {
       
       $html .= '</div>'.PHP_EOL; // panel-body
             
-      $html .= '<div class="panel-footer" style="background-transparent;">'.PHP_EOL;
+      $html .= '<div class="panel-footer" style="background:transparent;">'.PHP_EOL;
       $html .= '<h5>Read about this project:</h5>'.PHP_EOL;
       $html .= '<h4 class="serif"><a href="'.get_permalink().'">'.get_the_title().'</a> <small>&rarr;</small></h4>'.PHP_EOL;
       $html .= '</div>'.PHP_EOL; // panel-footer
