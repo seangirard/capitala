@@ -75,7 +75,7 @@ function capitala_portfolio($params) {
         $html .= '</p>'.PHP_EOL;
       }
       $html .= 'Read more about this project:'.PHP_EOL;
-      $html .= '<h4><a href="'.get_permalink().'">'.get_the_title().'</a> &rarr;</h4>'.PHP_EOL;
+      $html .= '<h4><a href="'.get_permalink().'">'.get_the_title().'</a> <small>&rarr;</small></h4>'.PHP_EOL;
 
       $html .= '</div>'.PHP_EOL; // panel-body
       $html .= '</div>'.PHP_EOL; // panel
