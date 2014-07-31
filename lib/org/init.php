@@ -57,9 +57,13 @@ function capitala_portfolio($params) {
   $count = $posts->post_count;
   $html .= $count;
   if ($posts->have_posts()) : 
-    $html .= '<div class="row">'.PHP_EOL;
+    //$html .= '<div class="row">'.PHP_EOL;
     $i = 1;
     while ($posts->have_posts()) : $posts->the_post(); 
+      if ( 1== $i || 1 == $i % 2 ) {
+        $html .= '<div class="row">'.PHP_EOL;
+      }
+
       $html .= '<div class="col-md-6">'.PHP_EOL;
       $html .= '<div class="panel panel-default">'.PHP_EOL;
       $html .= '<div class="panel-body">'.PHP_EOL;
@@ -73,10 +77,12 @@ function capitala_portfolio($params) {
       $html .= '</div>'.PHP_EOL;
       $html .= '</div>'.PHP_EOL;
       $html .= '</div>'.PHP_EOL;
+      if ( $posts->post_count == $i || 1 == $i % 2 ) {
+        $html .= '</div>'.PHP_EOL;
+      }
       $i++;
     endwhile; 
-
-    $html .= '</div>'.PHP_EOL;
+    //$html .= '</div>'.PHP_EOL;
   endif;
 
   return $html;
