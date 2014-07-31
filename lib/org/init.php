@@ -54,7 +54,7 @@ function capitala_portfolio($params) {
   );  
   $posts = new WP_query($args);  
   //$html .= print_r($posts->post_count,true);
-  $count = $posts['post_count']);
+  $count = $posts['post_count'];
   $html .= $count;
   if ($posts->have_posts()) : 
     $html .= '<div class="row">'.PHP_EOL;
