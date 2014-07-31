@@ -77,7 +77,7 @@ function capitala_portfolio($params) {
       $html .= '</div>'.PHP_EOL;
       $html .= '</div>'.PHP_EOL;
       $html .= '</div>'.PHP_EOL;
-      if ( $posts->post_count == $i || 1 == $i % 2 ) {
+      if ( $posts->post_count == $i || 0 == $i % 2 ) {
         $html .= '</div>'.PHP_EOL;
       }
       $i++;
