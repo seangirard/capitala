@@ -46,12 +46,19 @@ function capitala_portfolio($params) {
   
   //query subpages  
   $args = array(  
-      'category_name' => 'misc'
+      'category_name' => 'portfolio'
     , 'post_type' => 'post'  
     , 'orderby' => 'menu_order'
     , 'order' => 'ASC'
   );  
   $posts = new WP_query($args);  
+
+  if ($posts->have_posts()) : 
+    while ($posts->have_posts()) : $posts->the_post(); 
+      $html .= $post->post_name;
+      $html .= '<br>';
+    endwhile; 
+  endif;
 
   $html = null;
 
