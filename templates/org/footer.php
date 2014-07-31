@@ -11,6 +11,9 @@
         <h4 class="serif">
           <?php bloginfo('name'); ?>
         </h4>
+        <h5 class="serif uppercase">
+          <?php bloginfo('description'); ?>
+        </h5>
       </div><!-- /.col -->
 
       <div class="col-md-6">
