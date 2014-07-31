@@ -66,7 +66,7 @@ function capitala_portfolio($params) {
         $html .= get_the_post_thumbnail($page->ID, 'large', array('class'=>'img-responsive img-rounded'));
         $html .= '</p>'.PHP_EOL;
       }
-      //$html .= get_the_excerpt(); 
+      $html .= get_the_excerpt(); 
       $html .= '</div>'.PHP_EOL;
       $html .= '</div>'.PHP_EOL;
       $html .= '</div>'.PHP_EOL;
