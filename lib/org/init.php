@@ -73,7 +73,7 @@ function capitala_portfolio($params) {
       $html .= '</div>'.PHP_EOL;
       $i++;
     endwhile; 
-    $html .= count($posts);
+    $html .= count($posts->post_count);
     $html .= '</div>'.PHP_EOL;
   endif;
 
