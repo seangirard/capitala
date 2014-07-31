@@ -62,7 +62,7 @@ function capitala_portfolio($params) {
 
   $html = null;
 
-  $html .= print_r($posts, true);
+  //$html .= print_r($posts, true);
 
   $html .= 'This is a portfolio.';
 
