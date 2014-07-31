@@ -58,7 +58,7 @@ function capitala_portfolio($params) {
     while ($posts->have_posts()) : $posts->the_post(); 
       $html .= '<h4><a href="'.get_permalink().'">'.get_the_title().'</a> <small>&rarr;</small></h4>'.PHP_EOL;
       if ( has_post_thumbnail() ) { 
-        $html .= get_the_post_thumbnail('large');
+        $html .= get_the_post_thumbnail($page->ID, 'large');
       }
       $html .= get_the_excerpt(); 
     endwhile; 
