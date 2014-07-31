@@ -43,6 +43,7 @@ add_filter( 'post_thumbnail_html', 'bootstrap_responsive_images', 10 );
 
 function capitala_portfolio($params) {
   global $post;  
+  $html = null;
   
   //query subpages  
   $args = array(  
@@ -59,12 +60,6 @@ function capitala_portfolio($params) {
       $html .= '<br>';
     endwhile; 
   endif;
-
-  $html = null;
-
-  //$html .= print_r($posts, true);
-
-  $html .= 'This is a portfolio.';
 
   return $html;
 }
