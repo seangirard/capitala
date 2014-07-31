@@ -56,6 +56,7 @@ function capitala_portfolio($params) {
 
   if ($posts->have_posts()) : 
     $html .= '<div class="row">'.PHP_EOL;
+    $i = 1;
     while ($posts->have_posts()) : $posts->the_post(); 
       $html .= '<div class="col-md-6">'.PHP_EOL;
       $html .= '<div class="panel panel-default">'.PHP_EOL;
@@ -70,7 +71,9 @@ function capitala_portfolio($params) {
       $html .= '</div>'.PHP_EOL;
       $html .= '</div>'.PHP_EOL;
       $html .= '</div>'.PHP_EOL;
+      $i++;
     endwhile; 
+    $html .= count($posts);
     $html .= '</div>'.PHP_EOL;
   endif;
 
