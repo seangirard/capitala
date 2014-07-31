@@ -42,7 +42,20 @@ add_filter( 'post_thumbnail_html', 'bootstrap_responsive_images', 10 );
 
 
 function capitala_portfolio($params) {
+  global $post;  
+  
+  //query subpages  
+  $args = array(  
+      'post_category' => 'misc'
+    , 'post_type' => 'post'  
+    , 'orderby' => 'menu_order'
+    , 'order' => 'ASC'
+  );  
+  $posts = new WP_query($args);  
+
   $html = null;
+
+  $html .= print_r($posts, true);
 
   $html .= 'This is a portfolio.';
 
