@@ -79,9 +79,9 @@ function capitala_portfolio($params) {
       
       $html .= '<div class="panel-footer">'.PHP_EOL;
       $html .= 'Read more about this project:'.PHP_EOL;
-      $html .= '<h4><a href="'.get_permalink().'">'.get_the_title().'</a> &rarr;</h4>'.PHP_EOL;
+      $html .= '<h4 class="entry-title"><a href="'.get_permalink().'">'.get_the_title().'</a> &rarr;</h4>'.PHP_EOL;
       $html .= '</div>'.PHP_EOL; // panel-footer
-      
+
       $html .= '</div>'.PHP_EOL; // panel
       $html .= '</div>'.PHP_EOL; // col
       if ( $posts->post_count == $i || 0 == $i % 2 ) {
