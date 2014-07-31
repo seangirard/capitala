@@ -64,7 +64,7 @@ function capitala_portfolio($params) {
 
       $html .= '<div class="col-md-6">'.PHP_EOL;
 
-      $html .= '<h2 class="entry-title">'.get_the_excerpt().'</h2>'.PHP_EOL; 
+      $html .= '<h4 class="">'.get_the_excerpt().'</h4>'.PHP_EOL; 
       if ( has_post_thumbnail() ) { 
         $html .= '<p>'.PHP_EOL;
         $html .= get_the_post_thumbnail($page->ID, 'medium', array('class'=>'img-responsive img-rounded img-portfolio'));
