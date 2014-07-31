@@ -19,7 +19,7 @@
       </button>
       <a class="navbar-brand hidden-md hidden-lg" href="<?php echo home_url(); ?>/">
         <span class="logotype hidden-xs"><?php bloginfo('name'); ?></span>
-        <span class="logotype hidden-sm"><small><?php bloginfo('name'); ?></small></span>
+        <span class="logotype hidden-sm"><small>Capital A Publications</small></span>
       </a>
     </div>
     <nav class="collapse navbar-collapse" role="navigation">
