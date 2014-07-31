@@ -50,7 +50,7 @@ function capitala_portfolio($params) {
       'category_name' => 'portfolio'
     , 'post_type' => 'post'  
     , 'orderby' => 'post_date'
-    , 'order' => 'ASC'
+    , 'order' => 'DESC'
   );  
   $posts = new WP_query($args);  
   
