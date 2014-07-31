@@ -8,10 +8,10 @@
 
     <div class="row">
       <div class="col-sm-12">
-        <h3 class="serif uppercase text-center">
+        <h3 class="serif text-center">
           <?php bloginfo('name'); ?>
         </h3>
-        <h5 class="serif uppercase text-center">
+        <h5 class="serif text-center">
           <?php bloginfo('description'); ?>
         </h5>
       </div><!-- /.col -->
