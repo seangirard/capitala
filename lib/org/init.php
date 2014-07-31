@@ -74,12 +74,14 @@ function capitala_portfolio($params) {
         $html .= get_the_post_thumbnail($page->ID, 'medium', array('class'=>'img-responsive img-portfolio'));
         $html .= '</p>'.PHP_EOL;
       }
+      
+      $html .= '</div>'.PHP_EOL; // panel-body
+      
       $html .= '<div class="panel-footer">'.PHP_EOL;
       $html .= 'Read more about this project:'.PHP_EOL;
       $html .= '<h4><a href="'.get_permalink().'">'.get_the_title().'</a> &rarr;</h4>'.PHP_EOL;
       $html .= '</div>'.PHP_EOL; // panel-footer
-
-      $html .= '</div>'.PHP_EOL; // panel-body
+      
       $html .= '</div>'.PHP_EOL; // panel
       $html .= '</div>'.PHP_EOL; // col
       if ( $posts->post_count == $i || 0 == $i % 2 ) {
