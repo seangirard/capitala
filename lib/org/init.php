@@ -55,7 +55,7 @@ function capitala_portfolio($params) {
   $posts = new WP_query($args);  
 
   if ($posts->have_posts()) : 
-    $html .= '<div class="row">'.PHP_EOL;
+    $html .= '<div class="row" style="background:red;">'.PHP_EOL;
     while ($posts->have_posts()) : $posts->the_post(); 
       $html .= '<div class="col-md-6">'.PHP_EOL;
       $html .= '<h4><a href="'.get_permalink().'">'.get_the_title().'</a> <small>&rarr;</small></h4>'.PHP_EOL;
