@@ -8,9 +8,9 @@
 
     <div class="row">
       <div class="col-md-6">
-        <h2 class="serif">
+        <h4 class="serif">
           <?php bloginfo('name'); ?>
-        </h2>
+        </h4>
       </div><!-- /.col -->
 
       <div class="col-md-6">
