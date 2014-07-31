@@ -62,7 +62,7 @@ function capitala_portfolio($params) {
       $html .= '<div class="panel-body">'.PHP_EOL;
       $html .= '<h4><a href="'.get_permalink().'">'.get_the_title().'</a> <small>&rarr;</small></h4>'.PHP_EOL;
       if ( has_post_thumbnail() ) { 
-        $html .= '<p>'.PHP_EOL;
+        $html .= '<p class="text-center">'.PHP_EOL;
         $html .= get_the_post_thumbnail($page->ID, 'large', array('class'=>'img-responsive img-rounded'));
         $html .= '</p>'.PHP_EOL;
       }
