@@ -44,7 +44,7 @@ add_filter( 'post_thumbnail_html', 'bootstrap_responsive_images', 10 );
 function capitala_portfolio($params) {
   global $post;  
   $html = null;
-  
+
   //query subpages  
   $args = array(  
       'category_name' => 'portfolio'
@@ -56,8 +56,7 @@ function capitala_portfolio($params) {
 
   if ($posts->have_posts()) : 
     while ($posts->have_posts()) : $posts->the_post(); 
-      $html .= $post->post_name;
-      $html .= '<br>';
+      $html .= '<h4><a href="'.get_permalink().'">'.get_the_title().'</a> <small>&rarr;</small></h4>'.PHP_EOL;
     endwhile; 
   endif;
 
