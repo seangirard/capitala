@@ -12,7 +12,7 @@
           <?php bloginfo('name'); ?>
         </h3>
         <h5 class="serif text-center">
-          <?php bloginfo('description'); ?>
+          <em><?php bloginfo('description'); ?></em>
         </h5>
       </div><!-- /.col -->
     </div><!-- /.row -->
