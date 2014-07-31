@@ -76,13 +76,14 @@ function capitala_portfolio($params) {
         $html .= '</p>'.PHP_EOL;
       }
       
-      $html .= '</div>'.PHP_EOL; // panel-bodsery
+      
       
       //$html .= '<div class="panel-footer">'.PHP_EOL;
       $html .= '<h5>Read about this project:</h5>'.PHP_EOL;
       $html .= '<h4 class="serif"><a href="'.get_permalink().'">'.get_the_title().'</a> &rarr;</h4>'.PHP_EOL;
       //$html .= '</div>'.PHP_EOL; // panel-footer
 
+      $html .= '</div>'.PHP_EOL; // panel-body
       $html .= '</div>'.PHP_EOL; // panel
       $html .= '</div>'.PHP_EOL; // col
       if ( $posts->post_count == $i || 0 == $i % 2 ) {
