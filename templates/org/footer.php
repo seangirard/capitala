@@ -26,3 +26,7 @@
 
 </div>
 <div id="fb-root"></div>
+
+<p>
+  <a href="/admin/">Login</a>
+</p>
