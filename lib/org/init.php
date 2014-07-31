@@ -65,7 +65,7 @@ function capitala_portfolio($params) {
       $html .= '<div class="col-md-6">'.PHP_EOL;
       $html .= '<div class="panel panel-primary">'.PHP_EOL;
       $html .= '<div class="panel-heading">'.PHP_EOL;
-      $html .= '<h4 class="panel-title">'.get_the_excerpt().'</h4>'.PHP_EOL; 
+      $html .= '<h4 class="panel-title" style="color:#fff;">'.get_the_excerpt().'</h4>'.PHP_EOL; 
       $html .= '</div>'.PHP_EOL; // panel-heading
       $html .= '<div class="panel-body">'.PHP_EOL;
   
