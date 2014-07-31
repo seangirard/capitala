@@ -53,8 +53,8 @@ function capitala_portfolio($params) {
     , 'order' => 'ASC'
   );  
   $posts = new WP_query($args);  
-  print_r($posts);
-  $count = count($posts->post_count);
+  print_r('<pre>'.$posts.'</pre>',true);
+  //$count = count($posts[->]post_count);
   $html .= $count;
   if ($posts->have_posts()) : 
     $html .= '<div class="row">'.PHP_EOL;
