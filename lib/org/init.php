@@ -54,6 +54,7 @@ function capitala_portfolio($params) {
   );  
   $posts = new WP_query($args);  
   
+  $html .= '<div class="capitala-portfolio">'.PHP_EOL;
   if ($posts->have_posts()) : 
     //$html .= '<div class="row">'.PHP_EOL;
     $i = 1;
@@ -78,7 +79,7 @@ function capitala_portfolio($params) {
       $html .= '</div>'.PHP_EOL; // panel-bodsery
       
       $html .= '<div class="panel-footer">'.PHP_EOL;
-      $html .= '<h5>Read more about this project:</h5>'.PHP_EOL;
+      $html .= '<h5>Read about this project:</h5>'.PHP_EOL;
       $html .= '<h4 class="serif"><a href="'.get_permalink().'">'.get_the_title().'</a> &rarr;</h4>'.PHP_EOL;
       $html .= '</div>'.PHP_EOL; // panel-footer
 
@@ -91,7 +92,7 @@ function capitala_portfolio($params) {
     endwhile; 
     //$html .= '</div>'.PHP_EOL;
   endif;
-
+  $html .= '</div>'.PHP_EOL;
   return $html;
 }
 add_shortcode('capitala_portfolio', 'capitala_portfolio'); 
