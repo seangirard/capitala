@@ -53,7 +53,7 @@ function capitala_portfolio($params) {
     , 'order' => 'DESC'
   );  
   $posts = new WP_query($args);  
-  print_r($params);
+
   $html .= '<div class="capitala-portfolio">'.PHP_EOL;
   if ($posts->have_posts()) : 
     //$html .= '<div class="row">'.PHP_EOL;
@@ -65,11 +65,13 @@ function capitala_portfolio($params) {
 
       $html .= '<div class="col-md-6">'.PHP_EOL;
       $html .= '<div class="panel panel-primary">'.PHP_EOL;
-      $html .= '<div class="panel-heading">'.PHP_EOL;
-      $html .= '<h4 class="panel-title" style="color:#fff;">'.get_the_excerpt().'</h4>'.PHP_EOL; 
-      $html .= '</div>'.PHP_EOL; // panel-heading
+      //$html .= '<div class="panel-heading">'.PHP_EOL;
+      //$html .= '<h4 class="panel-title" style="color:#fff;">'.get_the_excerpt().'</h4>'.PHP_EOL; 
+      //$html .= '</div>'.PHP_EOL; // panel-heading
       $html .= '<div class="panel-body">'.PHP_EOL;
   
+      $html .= '<h4>'.get_the_excerpt().'</h4>'.PHP_EOL; 
+
       //$html .= '<h4 class="">'.get_the_excerpt().'</h4>'.PHP_EOL; 
       if ( has_post_thumbnail() ) { 
         $html .= '<p>'.PHP_EOL;
