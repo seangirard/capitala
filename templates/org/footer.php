@@ -1,25 +1,19 @@
 <hr>
 
-<div id="spl-more" style="/*background:rgb(100,150,75);*/">
+<div id="capitala-footer">
 
   <!-- <a name="spl-more">&nbsp;</a> -->
 
   <footer class="container" role="contentinfo">
 
     <div class="row">
-      <div class="col-md-6">
-        <h4 class="serif">
+      <div class="col-lg-6">
+        <h3 class="serif">
           <?php bloginfo('name'); ?>
-        </h4>
+        </h3>
         <h5 class="serif uppercase">
           <?php bloginfo('description'); ?>
         </h5>
-      </div><!-- /.col -->
-
-      <div class="col-md-6">
-        <h4 class="serif">
-          <?php bloginfo('description'); ?>
-        </h4>
       </div><!-- /.col -->
     </div><!-- /.row -->
 
