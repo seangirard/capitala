@@ -8,7 +8,7 @@
 
     <div class="row">
       <div class="col-sm-12">
-        <h3 class="serif">
+        <h3 class="serif uppercase">
           <?php bloginfo('name'); ?>
         </h3>
         <h5 class="serif uppercase">
