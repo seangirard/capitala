@@ -46,7 +46,7 @@ function capitala_portfolio($params) {
   
   //query subpages  
   $args = array(  
-      'post_category' => 'misc'
+      'category_name' => 'misc'
     , 'post_type' => 'post'  
     , 'orderby' => 'menu_order'
     , 'order' => 'ASC'
