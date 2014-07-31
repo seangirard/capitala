@@ -1,7 +1,7 @@
 // Global configuration
 var config = { 
       path: {
-              absolute: 'http://beta.spokanelibraryfoundation.org'
+              absolute: 'http://www.capitala.net'
     }
 }
 
@@ -9,11 +9,8 @@ var config = {
 // Only fires on body class (working off strictly WordPress body_class)
 
 var ORG = {
-  setUser: function (user) {
-    
-  }
   // All pages
-, common: {
+ common: {
     init: function() {
       MBP.hideUrlBarOnLoad();
 
@@ -30,24 +27,6 @@ var ORG = {
         */
       });
 
-      $('.spl-form').validate({
-        highlight: function(element) {
-            $(element).closest('.form-group').addClass('has-error');
-        },
-        unhighlight: function(element) {
-            $(element).closest('.form-group').removeClass('has-error');
-        },
-        errorElement: 'span',
-        errorClass: 'help-block',
-        errorPlacement: function(error, element) {
-            if(element.parent('.input-group').length) {
-                error.insertAfter(element.parent());
-            } else {
-                error.insertAfter(element);
-            }
-        }
-      });
-
     },
     finalize: function() {
     }
@@ -56,25 +35,6 @@ var ORG = {
     init: function() {
       //console.log(config);
     }
-  }
-, donate : {
-    
-    init: function() {
-
-      Modernizr.load([
-        {
-          load: [config.path.absolute+'/assets/js/org/donate.js' ],
-          complete: function () {
-            if ( org ) { 
-              org.init();
-            } 
-          }
-        }
-      ]);
-
-    }
-    
-
   }
 
 };
