@@ -54,7 +54,7 @@ function capitala_portfolio($params) {
   );  
   $posts = new WP_query($args);  
   $html .= '<pre>';
-  $html .= print_r($posts,true);
+  $html .= print_r($posts->post_count,true);
   //$count = count($posts['post_count']);
   $html .= $count;
   if ($posts->have_posts()) : 
