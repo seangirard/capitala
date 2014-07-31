@@ -47,13 +47,13 @@ function capitala_portfolio($params) {
 
   //query subpages  
   $args = array(  
-      'category_name' => 'portfolio'
+      'category_name' => $params['category']
     , 'post_type' => 'post'  
     , 'orderby' => 'post_date'
     , 'order' => 'DESC'
   );  
   $posts = new WP_query($args);  
-  
+  print_r($params);
   $html .= '<div class="capitala-portfolio">'.PHP_EOL;
   if ($posts->have_posts()) : 
     //$html .= '<div class="row">'.PHP_EOL;
