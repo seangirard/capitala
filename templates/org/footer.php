@@ -17,6 +17,10 @@
       </div><!-- /.col -->
     </div><!-- /.row -->
 
+    <p class="text-center">
+      <a href="/admin/">Login</a>
+    </p>
+
   </footer>
 
   <span class="visible-xs"></span>
@@ -26,7 +30,3 @@
 
 </div>
 <div id="fb-root"></div>
-
-<p class="text-center">
-  <a href="/admin/">Login</a>
-</p>
