@@ -7,42 +7,16 @@
   <footer class="container" role="contentinfo">
 
     <div class="row">
-      <div class="col-md-4">
-        <p>
-          <span class="help-block serif">
-            <?php bloginfo('name'); ?>
-          </span>
-        </p>
-        <address class="help-block serif">
-          <small>
-          906 West Main Avenue
-          <br>
-          Spokane, WA 99201
-          <br>
-          509.444.5318
-          </small>
-        </address>
+      <div class="col-md-6">
+        <h2 class="serif">
+          <?php bloginfo('name'); ?>
+        </h2>
       </div><!-- /.col -->
 
-      <div class="col-md-4">
-        <p class="text-center">
-          <small class="glyphicon glyphicon-envelope text-primary"></small>
-          <a href="mailto:foundation@spokanelibrary.org">foundation@spokanelibrary.org</a>
-        </p>
-        <p class="text-center">
-          <a class="help-block" href="/financial-information"><small>FEIN: 91-1917727</small></a>
-        </p>
-      </div><!-- /.col -->
-
-      <div class="col-md-4">
-        <p class="text-right">
-          <span class="help-block serif" >
+      <div class="col-md-6">
+        <h4 class="serif">
           <?php bloginfo('description'); ?>
-         </span>
-        </p>
-        <p class="text-right">
-          <a href="http://www.spokanelibrary.org"><img alt="Spokane Public Library Logo" src="/assets/img/SPL-Logo-beta.png"></a>
-        </p>
+        </h4>
       </div><!-- /.col -->
     </div><!-- /.row -->
 
