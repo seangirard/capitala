@@ -70,7 +70,7 @@ function capitala_portfolio($params) {
       //$html .= '</div>'.PHP_EOL; // panel-heading
       $html .= '<div class="panel-body">'.PHP_EOL;
   
-      $html .= '<h4>'.get_the_excerpt().'</h4>'.PHP_EOL; 
+      $html .= '<h4 class="text-center">'.get_the_excerpt().'</h4>'.PHP_EOL; 
 
       //$html .= '<h4 class="">'.get_the_excerpt().'</h4>'.PHP_EOL; 
       if ( has_post_thumbnail() ) { 
