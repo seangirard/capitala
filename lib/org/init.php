@@ -41,6 +41,16 @@ add_filter( 'the_content','bootstrap_responsive_images',10 );
 add_filter( 'post_thumbnail_html', 'bootstrap_responsive_images', 10 );
 
 
+function capitala_portfolio($params) {
+  $html = null;
+
+  $html .= 'This is a portfolio.';
+
+  return $html;
+}
+add_shortcode('capitala_portfolio', 'capitala_portfolio'); 
+
+
 function spl_tutorial($params) {  
     global $post;  
     
