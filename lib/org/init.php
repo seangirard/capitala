@@ -64,12 +64,13 @@ function capitala_portfolio($params) {
       }
 
       $html .= '<div class="col-md-6">'.PHP_EOL;
-      $html .= '<div class="panel panel-primary">'.PHP_EOL;
-      $html .= '<div class="panel-heading">'.PHP_EOL;
-      $html .= '<h4 class="panel-title" style="color:#fff;">'.get_the_excerpt().'</h4>'.PHP_EOL; 
-      $html .= '</div>'.PHP_EOL; // panel-heading
-      $html .= '<div class="panel-body">'.PHP_EOL;
+      //$html .= '<div class="panel panel-primary">'.PHP_EOL;
+      //$html .= '<div class="panel-heading">'.PHP_EOL;
+      //$html .= '<h4 class="panel-title" style="color:#fff;">'.get_the_excerpt().'</h4>'.PHP_EOL; 
+      //$html .= '</div>'.PHP_EOL; // panel-heading
+      //$html .= '<div class="panel-body">'.PHP_EOL;
   
+      $html .= '<h4 class="">'.get_the_excerpt().'</h4>'.PHP_EOL; 
       if ( has_post_thumbnail() ) { 
         $html .= '<p>'.PHP_EOL;
         $html .= get_the_post_thumbnail($page->ID, 'medium', array('class'=>'img-responsive img-portfolio'));
@@ -80,11 +81,11 @@ function capitala_portfolio($params) {
       
       //$html .= '<div class="panel-footer">'.PHP_EOL;
       $html .= '<h5>Read about this project:</h5>'.PHP_EOL;
-      $html .= '<h4 class="serif"><a href="'.get_permalink().'">'.get_the_title().'</a> &rarr;</h4>'.PHP_EOL;
+      $html .= '<h4 class="serif"><a href="'.get_permalink().'">'.get_the_title().'</a> <small>&rarr;</small></h4>'.PHP_EOL;
       //$html .= '</div>'.PHP_EOL; // panel-footer
 
-      $html .= '</div>'.PHP_EOL; // panel-body
-      $html .= '</div>'.PHP_EOL; // panel
+      //$html .= '</div>'.PHP_EOL; // panel-body
+      //$html .= '</div>'.PHP_EOL; // panel
       $html .= '</div>'.PHP_EOL; // col
       if ( $posts->post_count == $i || 0 == $i % 2 ) {
         $html .= '</div>'.PHP_EOL; //row
