@@ -53,9 +53,7 @@ function capitala_portfolio($params) {
     , 'order' => 'ASC'
   );  
   $posts = new WP_query($args);  
-  //$html .= print_r($posts->post_count,true);
-  $count = $posts->post_count;
-  $html .= $count;
+  
   if ($posts->have_posts()) : 
     //$html .= '<div class="row">'.PHP_EOL;
     $i = 1;
@@ -65,20 +63,18 @@ function capitala_portfolio($params) {
       }
 
       $html .= '<div class="col-md-6">'.PHP_EOL;
-      $html .= '<div class="panel panel-default">'.PHP_EOL;
-      $html .= '<div class="panel-body">'.PHP_EOL;
-      $html .= '<h4><a href="'.get_permalink().'">'.get_the_title().'</a> <small>&rarr;</small></h4>'.PHP_EOL;
+
+      $html .= '<h1 class="entry-title">'.get_the_excerpt().'</h1>'.PHP_EOL; 
       if ( has_post_thumbnail() ) { 
         $html .= '<p>'.PHP_EOL;
         $html .= get_the_post_thumbnail($page->ID, 'medium', array('class'=>'img-responsive img-rounded img-portfolio'));
         $html .= '</p>'.PHP_EOL;
       }
-      $html .= get_the_excerpt(); 
-      $html .= '</div>'.PHP_EOL;
-      $html .= '</div>'.PHP_EOL;
-      $html .= '</div>'.PHP_EOL;
+      $html .= '<h4><a href="'.get_permalink().'">'.get_the_title().'</a> <small>&rarr;</small></h4>'.PHP_EOL;
+
+      $html .= '</div>'.PHP_EOL; // col
       if ( $posts->post_count == $i || 0 == $i % 2 ) {
-        $html .= '</div>'.PHP_EOL;
+        $html .= '</div>'.PHP_EOL; //row
       }
       $i++;
     endwhile; 
