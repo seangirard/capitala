@@ -1,6 +1,6 @@
 <hr>
 
-<div id="capitala-footer">
+<div class="capitala-footer">
 
   <!-- <a name="spl-more">&nbsp;</a> -->
 
